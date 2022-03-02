@@ -7,11 +7,15 @@ body {
   font-family: "orbitron";
   font-size: 1rem;
   color: #424f46;
-  background-image: url("../imgs/background-sky.webp");
+  background-image: url("../imgs/cielo\ simpsons.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background: linear-gradient(
+    rgba(29, 255, 244, 0.7),
+    rgba(240, 247, 246, 0.7) 
+   
 }
 .container {
   width: 80%;
@@ -38,8 +42,12 @@ header {
 }
 .nav__item {
   margin: 0 0 0 1rem;
+  background-image: url(../imgs/nube2.png) hide;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-nav ul {
+.nav__item :hover nav ul {
   display: flex;
 }
 nav ul li {
