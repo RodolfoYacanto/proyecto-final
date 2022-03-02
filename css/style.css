@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "orbitron";
+  font-size: 1rem;
+  color: #424f46;
+  background-image: url("../imgs/background-sky.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+header {
+  position: sticky;
+  top: 0;
+
+  background-color: "gradient";
+  padding: 0.5rem 1rem;
+  box-shadow: #424f46 0 0 2rem;
+}
+.fila {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav__link {
+  color: #424f46;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav__item {
+  margin: 0 0 0 1rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.4;
+}
+.col {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.media {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parrafoprimero {
+  display: flex;
+  align-items: center;
+}
+.cajaImgP {
+  display: flex;
+  flex-direction: row;
+}
+.icono__reciclaje {
+  max-width: 200px;
+  margin: 0 auto;
+}
+img {
+  text-align: right;
+}
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+h1 {
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 400px;
+  height: auto;
+}
+i {
+  margin-right: 3rem;
+  text-align: center;
+}
