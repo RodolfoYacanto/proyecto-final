@@ -3,19 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: themillion;
+  src: url(../Homer_Simpson.ttf);
+}
 body {
-  font-family: "orbitron";
-  font-size: 1rem;
-  color: #424f46;
+  font-family: themillion;
+  font-size: 2rem;
+
+  color: black;
   background-image: url("../imgs/cielo\ simpsons.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background: linear-gradient(
-    rgba(29, 255, 244, 0.7),
-    rgba(240, 247, 246, 0.7) 
-   
 }
 .container {
   width: 80%;
@@ -25,17 +26,17 @@ body {
 header {
   position: sticky;
   top: 0;
-
   background-color: "gradient";
   padding: 0.5rem 1rem;
   box-shadow: #424f46 0 0 2rem;
+  font-family: themillion;
 }
 .fila {
   display: flex;
   justify-content: space-evenly;
 }
 .nav__link {
-  color: #424f46;
+  color: black;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -46,6 +47,7 @@ header {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 .nav__item :hover nav ul {
   display: flex;
@@ -72,6 +74,7 @@ nav ul li {
 .parrafoprimero {
   display: flex;
   align-items: center;
+  width: 800px;
 }
 .cajaImgP {
   display: flex;
@@ -81,15 +84,25 @@ nav ul li {
   max-width: 200px;
   margin: 0 auto;
 }
+.SegundaCaja {
+  height: 400px;
+}
 img {
   text-align: right;
 }
 footer {
   max-width: 100%;
   margin: 0 auto;
-  background-color: white;
+  background-color: #424f46;
 }
 h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+}
+h2 {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
