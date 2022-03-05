@@ -22,7 +22,7 @@ body {
   background-attachment: fixed;
   width: 100%;
   max-width: 1800px;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   align-content: center;
 }
@@ -60,6 +60,9 @@ header {
 }
 
 /*fin encabezado*/
+h1 {
+  margin-top: 3rem;
+}
 .caja {
   display: flex;
   flex-direction: row;
@@ -85,20 +88,17 @@ header {
   max-width: 80%;
   text-align: center;
 }
+/*footer*/
 footer {
   color: white;
   width: 100%;
-  margin: 0 auto;
   background-color: black;
   display: flex;
   justify-content: space-evenly;
   justify-content: center;
-  position: fixed;
+  position: static;
   bottom: 0;
-}
-/* cajas */
-.cajas {
-  overflow: hidden;
+  height: 50px;
 }
 .PieDePagina {
   display: flex;
@@ -119,6 +119,54 @@ li {
   color: white;
   display: flex;
   flex-direction: row;
-  height: 100px;
+
   align-items: center;
+}
+/* cajas */
+.cajas {
+  overflow: hidden;
+}
+
+/*[tarjetas personales*/
+.card {
+  margin: 2rem;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.staff {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo {
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  background-color: white;
+}
+.card--pink {
+  background: rgb(207, 41, 68);
+}
+.card--yellow {
+  background: rgb(253, 197, 14);
+}
+.card--green {
+  background: rgb(51, 128, 0);
+}
+.card--blue {
+  background: rgb(9, 199, 126);
+}
+.card--orange {
+  background: orangered;
+}
+.card--red {
+  background-color: #f52323;
+}
+.card--grey {
+  background: rgb(165, 148, 148);
 }
