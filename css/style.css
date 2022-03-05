@@ -11,6 +11,7 @@ html {
   src: url(../Homer_Simpson.ttf);
   font-size: 2rem;
 }
+
 body {
   font-family: themillion;
   font-size: 2rem;
@@ -119,15 +120,10 @@ li {
   color: white;
   display: flex;
   flex-direction: row;
-
   align-items: center;
 }
-/* cajas */
-.cajas {
-  overflow: hidden;
-}
 
-/*[tarjetas personales*/
+/*tarjetas personales*/
 .card {
   margin: 2rem;
   min-width: 300px;
@@ -169,4 +165,65 @@ li {
 }
 .card--grey {
   background: rgb(165, 148, 148);
+}
+/*pagina FAQ*/
+.container__preguntas {
+  align-content: center;
+  margin: 30px auto;
+  display: grid;
+  grid-gap: 20px 30px;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "primera segunda"
+    "cuarta tercera"
+    "septima octava"
+    "quinta sexta";
+}
+.caja__preguntas {
+  border: 2px solid grey;
+  box-shadow: 0 10px 30px -10px #fdf3f3;
+  margin: 8px auto;
+  background-color: rgb(253, 197, 14);
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 350px;
+  max-width: 600px;
+}
+.caja__preguntas--primera {
+  grid-area: primera;
+}
+.caja__preguntas--segunda {
+  grid-area: segunda;
+}
+.caja__preguntas--tercera {
+  grid-area: tercera;
+}
+.caja__preguntas--cuarta {
+  grid-area: cuarta;
+}
+.caja__preguntas--quinta {
+  grid-area: quinta;
+}
+.caja__preguntas--sexta {
+  grid-area: sexta;
+}
+.caja__preguntas--septima {
+  grid-area: septima;
+}
+.caja__preguntas--octava {
+  grid-area: octava;
+}
+@media (max-width: 1370px) {
+  .container__preguntas { 
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "primera"
+    "segunda"
+    "tercera"
+    "cuarta"
+    "quinta"
+    "sexta"
+    "septima"
+    "octava";
 }
