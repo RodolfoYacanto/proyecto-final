@@ -3,114 +3,122 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 @font-face {
   font-family: themillion;
   src: url(../Homer_Simpson.ttf);
+  font-size: 2rem;
 }
 body {
   font-family: themillion;
   font-size: 2rem;
-
   color: black;
   background-image: url("../imgs/cielo\ simpsons.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  max-width: 1800px;
+  height: 100vh;
+  text-align: center;
+  align-content: center;
 }
-.container {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
+
+/*encabezado */
 header {
   position: sticky;
   top: 0;
-  background-color: "gradient";
+  z-index: 1;
   padding: 0.5rem 1rem;
-  box-shadow: #424f46 0 0 2rem;
+  box-shadow: #4f4a42 0 0 2rem 0;
   font-family: themillion;
-}
-.fila {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav__item {
+  margin: 0 0 0 1rem;
+  display: inline-block;
+  list-style: none;
 }
 .nav__link {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
-}
-.nav__item {
-  margin: 0 0 0 1rem;
-  background-image: url(../imgs/nube2.png) hide;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-.nav__item :hover nav ul {
-  display: flex;
-}
-nav ul li {
   list-style: none;
+  text-transform: uppercase;
+  margin: auto 0.5rem;
 }
 .nav__link:hover,
 .nav__link:focus {
   opacity: 0.4;
 }
-.col {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-.media {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.parrafoprimero {
-  display: flex;
-  align-items: center;
-  width: 800px;
-}
-.cajaImgP {
+
+/*fin encabezado*/
+.caja {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.icono__reciclaje {
-  max-width: 200px;
+.caja__primera {
+  display: flex;
+  flex-direction: column;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+.ImgLuchadora {
+  max-width: 240px;
   margin: 0 auto;
 }
-.SegundaCaja {
-  height: 400px;
-}
-img {
-  text-align: right;
+/*revisado*/
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
 }
 footer {
-  max-width: 100%;
+  color: white;
+  width: 100%;
   margin: 0 auto;
-  background-color: #424f46;
-}
-h1 {
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 4rem;
+  justify-content: space-evenly;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
 }
-h2 {
+/* cajas */
+.cajas {
+  overflow: hidden;
+}
+.PieDePagina {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-left: 1rem;
   align-items: center;
+  bottom: 0;
+  position: relative;
 }
-img {
-  width: 400px;
-  height: auto;
+.PieDePagina h3 i {
+  padding-left: 2rem;
+  bottom: 0;
 }
-i {
-  margin-right: 3rem;
-  text-align: center;
+li {
+  list-style: none;
+}
+.redes {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  align-items: center;
 }

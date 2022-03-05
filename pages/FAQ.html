@@ -25,16 +25,13 @@
     />
     <title>Reciclaje de plástico</title>
   </head>
-  <body class="body">
-    <div class="container">
-      <header>
-        <!--Barra de navegacion -->
-        <nav class="nav">
-          <ul class="nav__list">
-            <!--logo avioncito de papel -->
-            <li>
-              <a href="../index.html"><i class="far fa-paper-plane"></i></a>
-            </li>
+  <body>
+    <!--Menu de navegacion -->
+    <header>
+      <a class="nav__item nav__link" href="index.html">
+        <i class="far fa-paper-plane"></i>
+      </a>
+      <nav class="nav">
             <li class="nav__item">
               <a class="nav__link" href="../index.html">Inicio</a>
             </li>
@@ -56,9 +53,9 @@
         </nav>
       </header>
       <!--contenido de la pagina FAQ -->
-      <main class="flex-container">
+      <main class="container">
         <div class="flex-container1">
-          <article class="aca contenidoContenido1">
+          <article class="caja">
             <h3>Lorem ipsum1</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -93,14 +90,27 @@
       </main>
 
       <!--footer -->
-      <footer class="pieDePagina">pie de pagina</footer>
+      
     </div>
     <!--Pie de pagina -->
     <footer>
-      <h3>buscanos en las redes</h3>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram"></i>
-      <h3>@copyright 2021 lalala</h3>
-    </footer>
+      <div class="PieDePagina">
+        <p>buscanos en las redes</p>
+        <nav class="nav">
+          <ul class="nav__list redes">
+          <li class= "nav__item redes">
+            <a class="nav__link redes"href="#"><i class="fab fa-twitter" ></i></a>
+          </li>
+          <li>
+          <a class= "nav__link redes" href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+          <li>
+            <a class="nav__link redes" href="#"><i class="fab fa-instagram"></i> </a>
+          </li>
+      </ul>
+    </nav>
+      <p>@copyright 2021 lalala</p>
+      </div>
+  </footer>
   </body>
 </html>
