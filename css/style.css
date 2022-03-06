@@ -40,8 +40,12 @@ header {
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
+  height: auto;
 }
 /*menu hamburguesa*/
+.nav {
+  height: auto;
+}
 .nav-toggle {
   display: none;
   cursor: pointer;
@@ -286,16 +290,46 @@ li {
     display: block;
   }
   .nav {
+    display: none;
+    height: auto;
+  }
+  .far {
     visibility: hidden;
   }
   .nav--visible {
-    visibility: visible;
+    display: block;
     height: auto;
     position: relative;
   }
+  header {
+    height: 100%;
+    justify-content: center;
+  }
+  .nav__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .video__youtube {
+    height: auto;
+    width: auto;
+  }
+  .caja {
+    min-width: 300px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .ImgLuchadora,
+  .icono__reciclaje {
+    width: 80px;
+  }
+  footer {
+    font-size: 1rem;
+  }
 }
 
-/*pagina de contacto le mande toda la artilleria y no lo pude centrar, nose que hacer */
+/*pagina de contacto  */
 .contacto {
   width: 400px;
   text-align: center;
