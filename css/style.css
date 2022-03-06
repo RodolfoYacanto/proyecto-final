@@ -64,9 +64,7 @@ header {
   transform: scale(1.2);
 }
 /*fin encabezado*/
-h1 {
-  margin-top: 3rem;
-}
+
 .caja {
   padding: 15px;
   display: flex;
@@ -92,9 +90,12 @@ h1 {
 }
 /*revisado*/
 .container {
-  margin: 0 auto;
-  max-width: 80%;
+  margin: 3rem auto;
+  max-width: 90%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*footer*/
 footer {
@@ -252,31 +253,14 @@ li {
   align-items: center;
 }
 fieldset {
+  width: 700px;
   display: flex;
-  text-align: center;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   align-items: center;
-  align-self: center;
   border: 3px solid black;
   background-color: rgb(253, 197, 14);
 }
-.flex__container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-legend {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
+
 /*animaciones*/
 .far:hover {
   transform: translate(10px, 10px) rotate(45deg);
