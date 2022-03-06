@@ -41,6 +41,47 @@ header {
   width: 100%;
   padding: 1rem;
 }
+/*menu hamburguesa*/
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  border: 2px solid rgba(2, 2, 2);
+  width: 3rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 0.25rem;
+  background-color: rgb(253, 197, 14);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+.hamburguer {
+  width: 50%;
+  position: relative;
+}
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: black;
+}
+.hamburguer::before,
+.hamburguer::after {
+  content: "";
+  width: 100%;
+}
+.hamburguer::before {
+  transform: translateY(-6px);
+}
+.hamburguer::after {
+  transform: translateY(3px);
+}
 
 .nav__item {
   margin: 0 0 0 1rem;
@@ -227,7 +268,7 @@ li {
 .caja__preguntas--octava {
   grid-area: octava;
 }
-@media (max-width: 1370px) {
+@media (max-width: 801px) {
   .container__preguntas {
     grid-template-rows: auto;
     grid-template-columns: auto;
@@ -241,7 +282,19 @@ li {
       "septima"
       "octava";
   }
+  .nav-toggle {
+    display: block;
+  }
+  .nav {
+    visibility: hidden;
+  }
+  .nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
 }
+
 /*pagina de contacto le mande toda la artilleria y no lo pude centrar, nose que hacer */
 .contacto {
   width: 400px;
