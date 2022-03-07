@@ -28,11 +28,15 @@
   <body>
     <!--barra de navegacion-->
     <header>
-      <a class="nav__item nav__link" href="index.html">
+      <button class="nav-toggle" aria-label="abrir navegacion">
+        <span class="hamburguer"></span>
+      </button>
+      <a class="nav__item nav__link" href="../index.html">
         <i class="far fa-paper-plane"></i>
       </a>
       <nav class="nav">
-            <li class="nav__item">
+        <ul class="nav__list">
+          <li class="nav__item">
             <a class="nav__link" href="../index.html">Inicio</a>
           </li>
           <li class="nav__item">
@@ -40,7 +44,9 @@
               >Tipos de plasticos</a
             >
           </li>
-          <li class="nav__item"><a class="nav__link" href="Nosotros.html">Nosotros</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="Nosotros.html">Nosotros</a>
+          </li>
           <li class="nav__item">
             <a class="nav__link" href="contacto.html">Contacto</a>
           </li>
@@ -49,12 +55,9 @@
           </li>
         </ul>
       </nav>
-    </header >
+    </header>
     <!--contenido de la pagina -->
     <main class="container">
-      
-      
-
       <h1>contacto</h1>
       <div class="contacto">
       <form class="tabla">
@@ -115,8 +118,9 @@
           </li>
       </ul>
     </nav>
-      <p>@copyright 2021 lalala</p>
+      <p>@copyright 2021</p>
       </div>
   </footer>
   </body>
+  <script src="../js/main.js"></script>
 </html>

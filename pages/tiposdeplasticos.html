@@ -28,11 +28,15 @@
   <body>
     <!--barra de navegacion -->
     <header>
-      <a class="nav__item nav__link" href="index.html">
+      <button class="nav-toggle" aria-label="abrir navegacion">
+        <span class="hamburguer"></span>
+      </button>
+      <a class="nav__item nav__link" href="../index.html">
         <i class="far fa-paper-plane"></i>
       </a>
       <nav class="nav">
-            <li class="nav__item">
+        <ul class="nav__list">
+          <li class="nav__item">
             <a class="nav__link" href="../index.html">Inicio</a>
           </li>
           <li class="nav__item">
@@ -55,7 +59,7 @@
     <!--contenido de la pagina -->
     <main class="container">
       <div clas="caja">
-        <h1>TIPOS DE PASTICOS</h1>
+        <h1>TIPOS DE PLASTICOS</h1>
         <div class="caja">
           <table border="6" cellpadding="10" cellspacing="5">
             <tr>
@@ -108,19 +112,26 @@
         <p>buscanos en las redes</p>
         <nav class="nav">
           <ul class="nav__list redes">
-          <li class= "nav__item redes">
-            <a class="nav__link redes"href="#"><i class="fab fa-twitter" ></i></a>
-          </li>
-          <li>
-          <a class= "nav__link redes" href="#"><i class="fab fa-facebook"></i></a>
-        </li>
-          <li>
-            <a class="nav__link redes" href="#"><i class="fab fa-instagram"></i> </a>
-          </li>
-      </ul>
-    </nav>
-      <p>@copyright 2021 lalala</p>
+            <li class="nav__item redes">
+              <a class="nav__link redes" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a class="nav__link redes" href="#"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a class="nav__link redes" href="#"
+                ><i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p>@copyright 2021</p>
       </div>
-  </footer>
+    </footer>
   </body>
+  <script src="../js/main.js"></script>
 </html>

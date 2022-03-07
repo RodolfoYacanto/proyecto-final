@@ -308,7 +308,6 @@ li {
   .nav__item {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
   .video__youtube {
     height: auto;
