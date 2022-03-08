@@ -34,7 +34,7 @@ header {
   top: 0;
   z-index: 1;
   padding: 0.5rem 1rem;
-
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
   font-family: themillion;
   display: flex;
   justify-content: space-between;
@@ -102,8 +102,10 @@ header {
 }
 .nav__link:hover,
 .nav__link:focus {
-  opacity: 0.4;
+  opacity: 0.8;
   transform: scale(1.2);
+  background-color: beige;
+  border-radius: 5rem;
 }
 .nav__item:hover {
   transform: scale(1.2);
@@ -294,7 +296,8 @@ li {
     height: auto;
   }
   .nav__link {
-    background-color: rgba(252, 128, 27, 0.959);
+    background-color: beige;
+    border-radius: 5rem;
   }
 
   .hidden__plane {
@@ -332,7 +335,12 @@ li {
     width: 80px;
   }
   footer {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 }
 .iframe-container {
@@ -352,7 +360,7 @@ li {
 }
 /*pagina de contacto  */
 .contacto {
-  width: 400px;
+  width: 90%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -360,13 +368,18 @@ li {
   align-content: center;
   align-items: center;
 }
+.tabla {
+  width: 100%;
+  text-align: center;
+}
 fieldset {
-  width: 700px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 3px solid black;
   background-color: rgb(253, 197, 14);
+  text-align: center;
 }
 
 /*animaciones*/
