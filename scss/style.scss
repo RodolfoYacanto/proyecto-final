@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: themillion;
+  src: url(../Simpsonfont.ttf);
+  font-size: 2rem;
+}
+
+body {
+  font-family: themillion;
+  font-size: 2rem;
+  color: black;
+  background-image: url("../imgs/cielo\ simpsons.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  max-width: 1800px;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+/*encabezado */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  font-family: themillion;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+}
+/*menu hamburguesa*/
+.nav {
+  height: auto;
+}
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+
+  width: 3rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 0.25rem;
+  background-color: rgb(253, 197, 14);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+.hamburguer {
+  width: 50%;
+  position: relative;
+}
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: black;
+}
+.hamburguer::before,
+.hamburguer::after {
+  content: "";
+  width: 100%;
+}
+.hamburguer::before {
+  transform: translateY(-6px);
+}
+.hamburguer::after {
+  transform: translateY(3px);
+}
+
+.nav__item {
+  margin: 0 0 0 1rem;
+  display: inline-block;
+  list-style: none;
+}
+.nav__link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  margin: auto 0.5rem;
+}
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.8;
+  transform: scale(1.2);
+  background-color: beige;
+  border-radius: 5rem;
+}
+.nav__item:hover {
+  transform: scale(1.2);
+}
+/*fin encabezado*/
+
+.caja {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 2px SOLID black;
+  background: rgb(253, 197, 14);
+}
+.caja__primera {
+  display: flex;
+  flex-direction: column;
+  background: rgb(253, 197, 14);
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+.ImgLuchadora {
+  max-width: 240px;
+  margin: 0 auto;
+}
+/*revisado*/
+.container {
+  margin: 3rem auto;
+  max-width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*footer*/
+footer {
+  color: white;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  position: static;
+  bottom: 0;
+  height: 50px;
+}
+.PieDePagina {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  align-items: center;
+  bottom: 0;
+  position: relative;
+}
+.PieDePagina h3 i {
+  padding-left: 2rem;
+  bottom: 0;
+}
+li {
+  list-style: none;
+}
+.redes {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*tarjetas personales pagina NOSOTROS*/
+.card {
+  margin: 2rem;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.card:hover {
+  background-color: #fdf3f3;
+}
+
+.staff {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo {
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  background-color: white;
+}
+.card--pink {
+  background: rgb(207, 41, 68);
+}
+.card--yellow {
+  background: rgb(253, 197, 14);
+}
+.card--green {
+  background: rgb(51, 128, 0);
+}
+.card--blue {
+  background: rgb(9, 199, 126);
+}
+.card--orange {
+  background: orangered;
+}
+.card--red {
+  background-color: #f52323;
+}
+.card--grey {
+  background: rgb(165, 148, 148);
+}
+
+/*pagina FAQ*/
+.container__preguntas {
+  align-content: center;
+  margin: 30px auto;
+  display: grid;
+  grid-gap: 20px 30px;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "primera segunda"
+    "cuarta tercera"
+    "septima octava"
+    "quinta sexta";
+}
+.caja__preguntas {
+  border: 2px solid black;
+  box-shadow: 0 10px 30px -10px #fdf3f3;
+  margin: 8px auto;
+  background-color: rgb(253, 197, 14);
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 350px;
+  max-width: 600px;
+}
+.caja__preguntas--primera {
+  grid-area: primera;
+}
+.caja__preguntas--segunda {
+  grid-area: segunda;
+}
+.caja__preguntas--tercera {
+  grid-area: tercera;
+}
+.caja__preguntas--cuarta {
+  grid-area: cuarta;
+}
+.caja__preguntas--quinta {
+  grid-area: quinta;
+}
+.caja__preguntas--sexta {
+  grid-area: sexta;
+}
+.caja__preguntas--septima {
+  grid-area: septima;
+}
+.caja__preguntas--octava {
+  grid-area: octava;
+}
+@media (max-width: 801px) {
+  .container__preguntas {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "primera"
+      "segunda"
+      "tercera"
+      "cuarta"
+      "quinta"
+      "sexta"
+      "septima"
+      "octava";
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+    height: auto;
+  }
+  .nav__link {
+    background-color: beige;
+    border-radius: 5rem;
+  }
+
+  .hidden__plane {
+    display: none;
+  }
+  .nav--visible {
+    display: block;
+    height: auto;
+    position: relative;
+  }
+  header {
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+  }
+  .nav__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+  }
+
+  .caja {
+    min-width: 300px;
+    min-height: 150px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ImgLuchadora,
+  .icono__reciclaje {
+    width: 80px;
+  }
+  footer {
+    font-size: 2rem;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  min-width: 300px;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+/*pagina de contacto  */
+.contacto {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.tabla {
+  width: 100%;
+  text-align: center;
+}
+fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  background-color: rgb(253, 197, 14);
+  text-align: center;
+}
+
+/*animaciones*/
+.far:hover {
+  transform: translate(10px, 10px) rotate(45deg);
+}
+.card:hover .photo {
+  transform: scale(1.2);
+}
