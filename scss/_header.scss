@@ -1,0 +1,68 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+    font-family: themillion;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+
+    .nav {
+        height: auto;
+        .nav__item {
+            margin: 0 0 0 1rem;
+            display: inline-block;
+            list-style: none;
+            .nav__link {
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+                list-style: none;
+                text-transform: uppercase;
+                margin: auto 0.5rem;
+                :hover :focus {
+                    opacity: 0.8;
+                    transform: scale(1.2);
+                    background-color: beige;
+                    border-radius: 5rem;
+                }
+                :hover {
+                    transform: scale(1.2);
+                  }
+              }
+          }
+      }
+    .nav-toggle {
+        display: none;
+        cursor: pointer;
+      
+        width: 3rem;
+        height: 3rem;
+        padding: 0em;
+        border-radius: 0.25rem;
+        background-color: rgb(253, 197, 14);
+        transition: opacity 250ms ease;
+        position: absolute;
+        left: 0;
+        :hover :focus{
+            opacity: 0.75;}
+            .hamburguer {
+                width: 50%;
+                position: relative;
+                :before :after{ 
+                    content: "";
+                    width: 100%;
+                }
+                :before {
+                        transform: translateY(-6px);
+
+                }
+                :after {
+                         transform: translateY(3px);
+                }   
+  }
+}

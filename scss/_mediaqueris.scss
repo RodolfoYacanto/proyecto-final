@@ -1,0 +1,70 @@
+@media (max-width: 801px) {
+  .container__preguntas {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "primera"
+      "segunda"
+      "tercera"
+      "cuarta"
+      "quinta"
+      "sexta"
+      "septima"
+      "octava";
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+    height: auto;
+  }
+  .nav__link {
+    background-color: beige;
+    border-radius: 5rem;
+  }
+
+  .hidden__plane {
+    display: none;
+  }
+  .nav--visible {
+    display: block;
+    height: auto;
+    position: relative;
+  }
+  header {
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    background: transparent;
+  }
+  .nav__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+  }
+
+  .caja {
+    min-width: 300px;
+    min-height: 150px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ImgLuchadora,
+  .icono__reciclaje {
+    width: 80px;
+  }
+  footer {
+    font-size: 2rem;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}

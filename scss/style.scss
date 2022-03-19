@@ -5,27 +5,30 @@
 }
 html {
   font-size: 62.5%;
+
+  body {
+    font-family: themillion;
+    font-size: 2rem;
+    color: black;
+    background-image: url("../imgs/cielo\ simpsons.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+  }
 }
 @font-face {
   font-family: themillion;
-  src: url(../Simpsonfont.ttf);
+  src: url(../font/Simpsonfont.ttf);
   font-size: 2rem;
-}
-
-body {
-  font-family: themillion;
-  font-size: 2rem;
-  color: black;
-  background-image: url("../imgs/cielo\ simpsons.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  max-width: 1800px;
-  height: 100%;
-  text-align: center;
-  align-content: center;
 }
 
 /*encabezado */
@@ -41,6 +44,7 @@ header {
   width: 100%;
   padding: 1rem;
   height: auto;
+  background-color: rgba(27, 212, 245, 0.74);
 }
 /*menu hamburguesa*/
 .nav {
@@ -93,7 +97,7 @@ header {
   list-style: none;
 }
 .nav__link {
-  color: black;
+  color: rgb(8, 4, 4);
   font-weight: bold;
   text-decoration: none;
   list-style: none;
@@ -145,38 +149,6 @@ header {
   align-items: center;
 }
 /*footer*/
-footer {
-  color: white;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: space-evenly;
-  justify-content: center;
-  position: static;
-  bottom: 0;
-  height: 50px;
-}
-.PieDePagina {
-  display: flex;
-  flex-direction: row;
-  padding-left: 1rem;
-  align-items: center;
-  bottom: 0;
-  position: relative;
-}
-.PieDePagina h3 i {
-  padding-left: 2rem;
-  bottom: 0;
-}
-li {
-  list-style: none;
-}
-.redes {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 /*tarjetas personales pagina NOSOTROS*/
 .card {
@@ -274,75 +246,7 @@ li {
 .caja__preguntas--octava {
   grid-area: octava;
 }
-@media (max-width: 801px) {
-  .container__preguntas {
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-template-areas:
-      "primera"
-      "segunda"
-      "tercera"
-      "cuarta"
-      "quinta"
-      "sexta"
-      "septima"
-      "octava";
-  }
-  .nav-toggle {
-    display: block;
-  }
-  .nav {
-    display: none;
-    height: auto;
-  }
-  .nav__link {
-    background-color: beige;
-    border-radius: 5rem;
-  }
 
-  .hidden__plane {
-    display: none;
-  }
-  .nav--visible {
-    display: block;
-    height: auto;
-    position: relative;
-  }
-  header {
-    height: 100%;
-    justify-content: center;
-    align-items: stretch;
-    height: 100%;
-  }
-  .nav__item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border: 2px solid black;
-    border-radius: 0.5rem;
-  }
-
-  .caja {
-    min-width: 300px;
-    min-height: 150px;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ImgLuchadora,
-  .icono__reciclaje {
-    width: 80px;
-  }
-  footer {
-    font-size: 2rem;
-  }
-  .redes {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-}
 .iframe-container {
   position: relative;
   width: 100%;
@@ -389,3 +293,5 @@ fieldset {
 .card:hover .photo {
   transform: scale(1.2);
 }
+@import "footer";
+@import "mediaqueris";
