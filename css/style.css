@@ -152,10 +152,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 2rem;
@@ -231,6 +231,7 @@ header {
 .card {
   margin: 2rem;
   min-width: 300px;
+  min-height: 620px;
   max-width: 300px;
   padding: 2rem;
   -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
