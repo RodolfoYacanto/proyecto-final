@@ -199,6 +199,7 @@ html {
 }
 
 fieldset {
+  width: 100%;
   max-width: 700px;
   min-width: 450px;
   display: flex;
@@ -218,3 +219,8 @@ fieldset {
 }
 @import "footer";
 @import "mediaqueris";
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

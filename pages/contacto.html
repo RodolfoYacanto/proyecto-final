@@ -70,20 +70,22 @@
           <legend>MI FORMULARIO DE CONTACTO</legend>
           <label for="nombre">NOMBRE:</label>
           <input type="text" name="nombre" id="nombre" placeholder='Escriba su nombre' required='' />
-          <br />
+         
           <label for="apellido">APELLIDO:</label>
           <input type="text" name="apellido" id="apellido" placeholder='Escriba su apellido'required />
-          <br>
+          
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" placeholder='Escriba su Email adress'required />
-          <br>
-          INDIVIDUAL
-          <input type="radio" name="CONSUMIDOR" value="INDIVIDUAL" />
-         COMPANIA
-          <input type="radio" name="CONSUMIDOR" value="COMPANIA" />
+          <div class="row">
+          <p> INDIVIDUAL</p>
+          <input type="radio" name="CONSUMIDOR" value="INDIVIDUAL" /></div>
+         <div class="row">
+           <p> COMPANIA</p>
+          <input type="radio" name="CONSUMIDOR" value="COMPANIA" /></div>
           <div>acepto recibir notificaciones al respecto</div>
+
           <input type="checkbox" name="acepta" value="1   " />
-          <br/>
+          
           <label for="consumidor de palsticos">consumidor de plasticos</label>
           <select name="talles" id="talles">          
               <option value="P">PEQUENO(menos de 100kg semanales)</option>
@@ -91,11 +93,11 @@
               <option value="G">GRANDE(mas de 500 kg semanales)</option>></option>
           </select>
             
-           <br /> 
+           
                 <label for="mensaje">mensaje</label>
-              <br>
+             
               <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-          <br>
+          
           <input type="submit"value='enviar formulario'   >
           <input type="reset"value='Borrar formulario'   >
         </fieldset>
