@@ -10,7 +10,7 @@ html {
     font-family: themillion;
     font-size: 2rem;
     color: black;
-    background-image: url("../imgs/cielo\ simpsons.jpg");
+    background-image: url("../imgs/cieloSimpsons.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,6 +25,13 @@ html {
     min-height: 100vh;
   }
 }
+@mixin flex($direction, $justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
 @font-face {
   font-family: themillion;
   src: url(../font/Simpsonfont.ttf);
@@ -37,22 +44,17 @@ html {
 
 .caja {
   padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include flex(column, center);
   margin-bottom: 2rem;
   border: 2px SOLID black;
   background: rgb(253, 197, 14);
 }
 .caja__primera {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, center);
   background: rgb(253, 197, 14);
 }
 .columna {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, center);
 }
 .ImgLuchadora {
   max-width: 240px;
@@ -62,10 +64,7 @@ html {
 .container {
   margin: 2rem auto 7rem auto;
   max-width: 90%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center);
 }
 /*footer*/
 
@@ -84,10 +83,8 @@ html {
 }
 
 .staff {
-  display: flex;
   max-width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex(wrap, center);
 }
 .photo {
   height: 300px;
@@ -184,30 +181,19 @@ html {
 /*pagina de contacto  */
 .contacto {
   width: 90%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 }
 .tabla {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  @include flex(column, center);
 }
-
 fieldset {
   width: 100%;
   max-width: 700px;
   min-width: 450px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border: 3px solid black;
   background-color: rgb(253, 197, 14);
   text-align: center;
+  @include flex(column, center);
 }
 
 /*animaciones*/
@@ -221,6 +207,5 @@ fieldset {
 @import "mediaqueris";
 
 .row {
-  display: flex;
-  flex-direction: row;
+  @include flex(row, space-evenly);
 }
