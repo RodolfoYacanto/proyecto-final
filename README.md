@@ -2,8 +2,6 @@
 
 repositorio del proyecto final
 
-## autor: Rodolfo Yacanto.
-
 ## este es mi proyecto respecto del reciclaje de plásticos
 
 el mismo se encuentra creado sin bootstrap, algo de SASS y alguito mas...
