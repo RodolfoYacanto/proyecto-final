@@ -6,4 +6,4 @@ repositorio del proyecto final
 
 el mismo se encuentra creado sin bootstrap, algo de SASS y alguito mas...
 aquí un pantallazo, literal!
-![screenshot]
+![screenshot] (https://github.com/RodolfoYacanto/proyecto-final/edit/main/imgs/paginaPlasticos.png)
