@@ -5,6 +5,7 @@
           box-sizing: border-box;
 }
 
+/* variables*/
 html {
   font-size: 62.5%;
 }
@@ -234,8 +235,8 @@ header {
   min-height: 620px;
   max-width: 300px;
   padding: 2rem;
-  -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
-          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0 10px 30px -10px black;
+          box-shadow: 0 10px 30px -10px black;
   overflow: hidden;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -267,8 +268,8 @@ header {
 .photo {
   height: 300px;
   width: 200px;
-  -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
-          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0 10px 30px -10px black;
+          box-shadow: 0 10px 30px -10px black;
   background-color: white;
 }
 
@@ -492,6 +493,19 @@ li {
 .redes {
   color: white;
   margin: auto 2rem;
+}
+
+/*maps*/
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #c25e30;
 }
 
 @media (max-width: 801px) {

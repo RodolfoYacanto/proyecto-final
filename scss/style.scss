@@ -3,13 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* variables*/
+$amarillo: rgb(253, 197, 14);
+$negro: black;
+
 html {
   font-size: 62.5%;
 
   body {
     font-family: themillion;
     font-size: 2rem;
-    color: black;
+    color: $negro;
     background-image: url("../imgs/cieloSimpsons.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -46,12 +50,12 @@ html {
   padding: 15px;
   @include flex(column, center);
   margin-bottom: 2rem;
-  border: 2px SOLID black;
-  background: rgb(253, 197, 14);
+  border: 2px SOLID $negro;
+  background: $amarillo;
 }
 .caja__primera {
   @include flex(column, center);
-  background: rgb(253, 197, 14);
+  background: $amarillo;
 }
 .columna {
   @include flex(column, center);
@@ -75,7 +79,7 @@ html {
   min-height: 620px;
   max-width: 300px;
   padding: 2rem;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 30px -10px $negro;
   overflow: hidden;
   transition: all 0.5s;
 }
@@ -90,14 +94,14 @@ html {
 .photo {
   height: 300px;
   width: 200px;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 30px -10px $negro;
   background-color: white;
 }
 .card--pink {
   background: rgb(207, 41, 68);
 }
 .card--yellow {
-  background: rgb(253, 197, 14);
+  background: $amarillo;
 }
 .card--green {
   background: rgb(51, 128, 0);
@@ -130,10 +134,10 @@ html {
     "quinta sexta";
 }
 .caja__preguntas {
-  border: 2px solid black;
+  border: 2px solid $negro;
   box-shadow: 0 10px 30px -10px #fdf3f3;
   margin: 8px auto;
-  background-color: rgb(253, 197, 14);
+  background-color: $amarillo;
   display: flex;
   flex-wrap: wrap;
   min-width: 350px;
@@ -191,8 +195,8 @@ fieldset {
   max-width: 700px;
   min-width: 450px;
   align-items: center;
-  border: 3px solid black;
-  background-color: rgb(253, 197, 14);
+  border: 3px solid $negro;
+  background-color: $amarillo;
   text-align: center;
   @include flex(column, center);
 }

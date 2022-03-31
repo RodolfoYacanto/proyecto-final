@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-final---2-practicasflex",
+  "name": "proyecto-final--plasticos-reciclables-yacanto",
   "version": "1.0.0",
-  "description": "",
+  "description": "página dedicada a la concientización sobre el reciclaje en genral y en particular el de los plásticos, su importancia, factibilidad de desarrollo, posibilidad tanto dentro del ámbito de un hobbie como de negocios, net-work en comunidades formadas por personas totalmente ajenas entre sí. además de todo esto, su finalidad tambien es ser una fuente de información y consulta en constante actialización",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
